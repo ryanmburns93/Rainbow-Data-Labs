@@ -20,3 +20,46 @@
 // Palette.
 	$palette: (
 	);
+
+// Rainbow Data Labs brand spectrum
+	$rainbow-violet: #8f00ff;
+	$rainbow-blue: #005cff;
+	$rainbow-cyan: #00c8ff;
+	$rainbow-green: #00e676;
+	$rainbow-yellow: #ffe600;
+	$rainbow-orange: #ff7a00;
+	$rainbow-red: #ff0054;
+	$rainbow-purple: #b517ff;
+	$rainbow-deep: #1a0a2e;
+
+	$rainbow-gradient-full: linear-gradient(125deg,
+		$rainbow-violet 0%,
+		$rainbow-blue 14%,
+		$rainbow-green 28%,
+		$rainbow-yellow 42%,
+		$rainbow-orange 57%,
+		$rainbow-red 71%,
+		$rainbow-purple 85%,
+		$rainbow-cyan 100%);
+
+	$rainbow-gradient-warm: linear-gradient(45deg,
+		$rainbow-purple 0%,
+		$rainbow-red 40%,
+		$rainbow-orange 100%);
+
+	$rainbow-gradient-cool: linear-gradient(135deg,
+		$rainbow-blue 0%,
+		$rainbow-green 45%,
+		$rainbow-violet 100%);
+
+	$rainbow-gradient-deep: linear-gradient(45deg,
+		$rainbow-violet 0%,
+		$rainbow-blue 25%,
+		$rainbow-green 50%,
+		$rainbow-orange 75%,
+		$rainbow-red 100%);
+
+	$rainbow-section-bg: url('images/bgtr.svg') top right no-repeat,
+		url('images/bgbl.svg') bottom left no-repeat,
+		url('images/overlay.png'),
+		linear-gradient(to bottom, rgba(10, 10, 24, 0.12), rgba(10, 10, 24, 0.28));

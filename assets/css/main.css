@@ -2182,10 +2182,21 @@ input, select, textarea {
 	#header {
 		position: relative;
 		margin: 0;
-		background-image: url("images/overlay.png"), url("../../images/header.jpg");
-		background-size: auto, cover;
-		background-position: top left, center center;
-		background-repeat: repeat, no-repeat;
+		background-image: url("images/overlay.png"),
+			linear-gradient(to bottom, rgba(10, 10, 24, 0.18), rgba(10, 10, 24, 0.08)),
+			url("../../images/rainbow-cascade.svg"),
+			linear-gradient(125deg,
+				#8f00ff 0%,
+				#005cff 14%,
+				#00e676 28%,
+				#ffe600 42%,
+				#ff7a00 57%,
+				#ff0054 71%,
+				#b517ff 85%,
+				#00c8ff 100%);
+		background-size: auto, auto, cover, cover;
+		background-position: top left, center, center, center;
+		background-repeat: repeat, no-repeat, no-repeat, no-repeat;
 		padding: 14em 0 14em 0;
 		text-align: center;
 		color: #fff;
@@ -2195,6 +2206,7 @@ input, select, textarea {
 			font-size: 2.25em;
 			line-height: 1.25em;
 			margin-bottom: 0;
+			text-shadow: 0 0.08em 0.4em rgba(0, 0, 0, 0.45);
 		}
 
 		#header header p {
@@ -2204,6 +2216,7 @@ input, select, textarea {
 			font-size: 1.25em;
 			line-height: 1.5em;
 			text-align: center;
+			text-shadow: 0 0.06em 0.35em rgba(0, 0, 0, 0.4);
 		}
 
 		#header footer {
@@ -2245,19 +2258,19 @@ input, select, textarea {
 			}
 
 			.main > .content.dark {
-				background: #433;
+				background: #1a0a2e;
 			}
 
 			.main > .content.style1 {
-				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #b39c68, #a56365, #412e4c);
+				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(to bottom, rgba(10, 10, 24, 0.12), rgba(10, 10, 24, 0.28)), linear-gradient(45deg, #b517ff 0%, #ff0054 40%, #ff7a00 100%);
 			}
 
 			.main > .content.style2 {
-				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #384955, #655361, #85505f);
+				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(to bottom, rgba(10, 10, 24, 0.12), rgba(10, 10, 24, 0.28)), linear-gradient(135deg, #005cff 0%, #00e676 45%, #8f00ff 100%);
 			}
 
 			.main > .content.style3 {
-				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #5f796b, #3a4e59, #2f394e);
+				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(to bottom, rgba(10, 10, 24, 0.12), rgba(10, 10, 24, 0.28)), linear-gradient(45deg, #8f00ff 0%, #005cff 25%, #00e676 50%, #ff7a00 75%, #ff0054 100%);
 			}
 
 			.main > .content.style4 {
