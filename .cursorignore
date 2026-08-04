@@ -1,0 +1,41 @@
+# Dependency Folders (The biggest RAM killers)
+node_modules/
+bower_components/
+venv/
+.venv/
+env/
+pkg/
+
+# Build and Output Directories
+dist/
+build/
+out/
+.next/
+.nuxt/
+target/
+bin/
+obj/
+
+# System and IDE Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+
+# Logs and Lockfiles (AI doesn't need to read these)
+*.log
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+cargo.lock
+
+# Media and Assets
+*.mp4
+*.mp3
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
