@@ -351,18 +351,36 @@
 				</header>
 				<div class="content style4 featured">
 					<div class="container medium">
-						<form method="post" action="#">
+						<form id="contact-form" method="post" action="#">
+
+							<div class="hp-field" aria-hidden="true">
+								<label for="contact-company">Company</label>
+								<input type="text" name="company" id="contact-company" tabindex="-1" autocomplete="off" />
+							</div>
+
 							<div class="row gtr-50">
-								<div class="col-6 col-12-mobile"><input type="text" placeholder="Name" /></div>
-								<div class="col-6 col-12-mobile"><input type="text" placeholder="Email" /></div>
-								<div class="col-12"><textarea name="message" placeholder="What would you like to explore?"></textarea></div>
+								<div class="col-6 col-12-mobile">
+									<label for="contact-name" class="sr-only">Name</label>
+									<input type="text" name="name" id="contact-name" placeholder="Name" autocomplete="name" required />
+								</div>
+								<div class="col-6 col-12-mobile">
+									<label for="contact-email" class="sr-only">Email</label>
+									<input type="email" name="email" id="contact-email" placeholder="Email" autocomplete="email" required />
+								</div>
+								<div class="col-12">
+									<label for="contact-message" class="sr-only">Message</label>
+									<textarea name="message" id="contact-message" placeholder="What would you like to explore?" required></textarea>
+								</div>
 								<div class="col-12">
 									<ul class="actions special">
-										<li><input type="submit" class="button" value="Send Message" /></li>
-										<li><input type="reset" class="button alt" value="Clear Form" /></li>
+										<li><input type="submit" class="button" id="contact-submit" value="Send Message" /></li>
+										<li><input type="reset" class="button alt" id="contact-reset" value="Clear Form" /></li>
 									</ul>
 								</div>
 							</div>
+
+							<p id="contact-form-status" class="form-status" role="status" aria-live="polite"></p>
+
 						</form>
 					</div>
 				</div>
@@ -391,6 +409,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/contact-form.js"></script>
 
 	</body>
 </html>
