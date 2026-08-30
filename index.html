@@ -351,12 +351,14 @@
 				</header>
 				<div class="content style4 featured">
 					<div class="container medium">
-						<form method="post" action="#">
+						<form id="contact-form" method="post" action="#">
 							<div class="row gtr-50">
-								<div class="col-6 col-12-mobile"><input type="text" placeholder="Name" /></div>
-								<div class="col-6 col-12-mobile"><input type="text" placeholder="Email" /></div>
-								<div class="col-12"><textarea name="message" placeholder="What would you like to explore?"></textarea></div>
+								<div class="col-6 col-12-mobile"><input type="text" name="name" id="contact-name" placeholder="Name" required /></div>
+								<div class="col-6 col-12-mobile"><input type="email" name="email" id="contact-email" placeholder="Email" required /></div>
+								<div class="col-12"><textarea name="message" id="contact-message" placeholder="What would you like to explore?" required></textarea></div>
+								<div class="contact-form-honeypot" aria-hidden="true"><input type="text" name="company" id="contact-company" tabindex="-1" autocomplete="off" /></div>
 								<div class="col-12">
+									<p id="contact-form-status" class="contact-form-status" role="status"></p>
 									<ul class="actions special">
 										<li><input type="submit" class="button" value="Send Message" /></li>
 										<li><input type="reset" class="button alt" value="Clear Form" /></li>
@@ -391,6 +393,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/contact-form.js"></script>
 
 	</body>
 </html>

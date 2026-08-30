@@ -2296,6 +2296,31 @@ input, select, textarea {
 				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(to bottom, rgba(10, 10, 24, 0.12), rgba(10, 10, 24, 0.28)), linear-gradient(125deg, #8f00ff 0%, #005cff 14%, #00e676 28%, #ffe600 42%, #ff7a00 57%, #ff0054 71%, #b517ff 85%, #00c8ff 100%);
 			}
 
+/* Contact form */
+
+	.contact-form-honeypot {
+		position: absolute;
+		left: -9999px;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+	}
+
+	.contact-form-status {
+		min-height: 1.5em;
+		margin: 0 0 1em 0;
+		font-size: 0.9em;
+		color: rgba(255, 255, 255, 0.85);
+	}
+
+		.contact-form-status.success {
+			color: #baffc9;
+		}
+
+		.contact-form-status.error {
+			color: #ffb3c1;
+		}
+
 /* Footer */
 
 	#footer {

@@ -1034,6 +1034,31 @@
 		}
 	}
 
+/* Contact form */
+
+	.contact-form-honeypot {
+		position: absolute;
+		left: -9999px;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+	}
+
+	.contact-form-status {
+		min-height: 1.5em;
+		margin: 0 0 1em 0;
+		font-size: 0.9em;
+		color: rgba(255, 255, 255, 0.85);
+
+		&.success {
+			color: #baffc9;
+		}
+
+		&.error {
+			color: #ffb3c1;
+		}
+	}
+
 /* Footer */
 
 	#footer {
