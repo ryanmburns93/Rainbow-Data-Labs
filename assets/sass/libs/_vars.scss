@@ -32,32 +32,20 @@
 	$rainbow-purple: #b517ff;
 	$rainbow-deep: #1a0a2e;
 
-	$rainbow-gradient-full: linear-gradient(125deg,
-		$rainbow-violet 0%,
-		$rainbow-blue 14%,
-		$rainbow-green 28%,
-		$rainbow-yellow 42%,
-		$rainbow-orange 57%,
-		$rainbow-red 71%,
-		$rainbow-purple 85%,
-		$rainbow-cyan 100%);
-
-	$rainbow-gradient-warm: linear-gradient(45deg,
-		$rainbow-purple 0%,
-		$rainbow-red 40%,
-		$rainbow-orange 100%);
-
-	$rainbow-gradient-cool: linear-gradient(135deg,
-		$rainbow-blue 0%,
-		$rainbow-green 45%,
-		$rainbow-violet 100%);
-
-	$rainbow-gradient-deep: linear-gradient(45deg,
-		$rainbow-violet 0%,
-		$rainbow-blue 25%,
-		$rainbow-green 50%,
-		$rainbow-orange 75%,
-		$rainbow-red 100%);
+	// One continuous gradient painted on <body> so it flows behind every
+	// section without a seam at each section's edge. Stops use px (not %)
+	// so the repeat length is fixed regardless of body's total height, and
+	// the first/last stop share a color so each cycle loops seamlessly.
+	$rainbow-gradient-page: repeating-linear-gradient(180deg,
+		$rainbow-violet 0px,
+		$rainbow-blue 300px,
+		$rainbow-cyan 600px,
+		$rainbow-green 900px,
+		$rainbow-yellow 1200px,
+		$rainbow-orange 1500px,
+		$rainbow-red 1800px,
+		$rainbow-purple 2100px,
+		$rainbow-violet 2400px);
 
 	$rainbow-section-bg: url('images/bgtr.svg') top right no-repeat,
 		url('images/bgbl.svg') bottom left no-repeat,
