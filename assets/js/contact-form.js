@@ -8,7 +8,7 @@
 (function () {
 	'use strict';
 
-	var ENDPOINT_URL = 'PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE';
+	var ENDPOINT_URL = 'https://script.google.com/macros/s/AKfycbzNK9fl5LTzZsp9RarHfjygcl2hWmLf8mpXts463jk5w3kz-XN44vRoEZ7DQGyqIrA7tQ/exec';
 
 	var form = document.getElementById('contact-form');
 	if (!form) return;
