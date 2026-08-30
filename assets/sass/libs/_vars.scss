@@ -47,7 +47,13 @@
 		$rainbow-purple 2100px,
 		$rainbow-violet 2400px);
 
+	// Corner flourishes only — the noise texture and darkening scrim live on
+	// <body> (see $rainbow-page-overlay) so they don't restart at each
+	// section's own box and create a seam.
 	$rainbow-section-bg: url('images/bgtr.svg') top right no-repeat,
-		url('images/bgbl.svg') bottom left no-repeat,
-		url('images/overlay.png'),
-		linear-gradient(to bottom, rgba(10, 10, 24, 0.12), rgba(10, 10, 24, 0.28));
+		url('images/bgbl.svg') bottom left no-repeat;
+
+	// Noise texture + a flat, constant scrim for text contrast, painted once
+	// on <body> so both stay continuous across every section boundary.
+	$rainbow-page-overlay: url('images/overlay.png'),
+		linear-gradient(rgba(10, 10, 24, 0.18), rgba(10, 10, 24, 0.18));
