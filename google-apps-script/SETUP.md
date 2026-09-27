@@ -33,6 +33,34 @@ In the Sheet: **Extensions → Apps Script**. Delete the placeholder
 Send me that URL and I'll drop it into `assets/js/contact-form.js`
 (the `ENDPOINT_URL` constant at the top of the file).
 
+## 5. Email notifications
+
+The script emails you each time an inquiry is saved. The email comes from
+your own Gmail account, has the inquiry in the body, and has **Reply-To set
+to the visitor**, so hitting Reply answers them directly.
+
+To turn it on (or after pasting in an updated `Code.gs`):
+
+1. In the Apps Script editor, replace the code with the updated
+   [`Code.gs`](./Code.gs) and save.
+2. Pick **`testNotification`** from the function dropdown in the toolbar
+   and click **Run**.
+3. Google asks for permission to **send email as you**. Approve it. You may
+   see "Google hasn't verified this app": choose **Advanced → Go to (project
+   name)**. It's your own script, so this is expected.
+4. Check your inbox for the test email.
+5. **Deploy → Manage deployments** → pencil icon → **Version: New version** →
+   **Deploy**. The live form only uses the updated script after this step. The
+   `/exec` URL stays the same.
+
+Notifications go to the account that owns the script. To send them
+somewhere else, or to several people, set `NOTIFY_EMAIL` at the top of the
+script (comma-separated), then repeat step 5.
+
+Limits: a personal Gmail account can send about 100 of these a day. If a
+notification fails, the inquiry is still saved to the Sheet, and the
+visitor still sees "Thanks". Spam caught by the honeypot sends no email.
+
 ## Notes
 
 - If you ever edit and re-save the script, you must create a **new
